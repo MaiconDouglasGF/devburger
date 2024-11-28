@@ -1,0 +1,12 @@
+{
+    "execMap": {
+      "js": "node -r sucrase/register"
+    },
+    "scripts": {
+  "dev": "nodemon",
+  "migrate": "sequelize-cli db:migrate --config src/config/database.js --migrations-path src/database/migrations",
+  "migrate:undo": "sequelize-cli db:migrate:undo --config src/config/database.js --migrations-path src/database/migrations"
+}
+  }
+
+  
