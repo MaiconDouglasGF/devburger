@@ -1,4 +1,3 @@
-
 import app from './app.js';
 
-app.listen(3001, () => console.log('Server is OK'))
+app.listen(3001, () => console.log('Server is OK'));
