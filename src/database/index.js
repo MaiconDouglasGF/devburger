@@ -4,6 +4,8 @@ import configDatabase from '../config/database';
 
 import User from '../app/models/users';
 
+const models = [User];
+
 class Database {
   constructor() {
     this.init();
@@ -11,6 +13,7 @@ class Database {
 
   init() {
     this.connection = new Sequelize(configDatabase);
+    models.map((model) => model.init(this.connection));
   }
 }
 
