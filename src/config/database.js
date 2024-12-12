@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 module.exports = {
   dialect: 'postgres',
   host: 'localhost',

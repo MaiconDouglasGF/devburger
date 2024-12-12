@@ -1,3 +1,4 @@
+import { resolve } from 'node:path';
 import express from 'express';
 import routes from './routes.js';
 
@@ -12,6 +13,10 @@ class App {
   }
   middlewares() {
     this.app.use(express.json());
+    this.app.use(
+      '/product-file',
+      express.static(resolve(__dirname, '..', 'uploads')),
+    );
   }
   routes() {
     this.app.use(routes);

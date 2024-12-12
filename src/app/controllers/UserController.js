@@ -1,4 +1,5 @@
 import { v4 } from 'uuid';
+import * as Yup from 'yup';
 
 import User from '../models/users';
 
